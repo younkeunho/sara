@@ -1,0 +1,376 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사라ကို​ယ်​စား ကော်ဖီလုပ်ငန်း​လမ်းပြမြေပုံ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        starbucks: '#00704A',
+                        coffeeclub: '#E31837',
+                        arabica: '#E15737',
+                        timhortons: '#D31145',
+                        deandeluca: '#000000',
+                        bluebottle: '#3366FF',
+                        costa: '#7B3F00'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #fdfdfd;
+            background-image: radial-gradient(#e0e0e0 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .brand-card {
+            transition: all 0.3s ease;
+        }
+        .brand-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .recommendation-card {
+            border-left: 4px solid;
+        }
+        .heart {
+            display: inline-block;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            5% { transform: scale(1.1); }
+            10% { transform: scale(1); }
+            15% { transform: scale(1.1); }
+            20% { transform: scale(1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <div class="flex justify-center mb-4">
+                <div class="heart text-4xl">❤️</div>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">사라ကို​ယ်​စား ကော်ဖီလုပ်ငန်း​လမ်းပြမြေပုံ</h1>
+
+            <div class="w-24 h-1 bg-blue-500 mx-auto mt-6 rounded-full"></div>
+        </header>
+
+        <!-- Personalized Introduction -->
+        <section class="mb-12 bg-gradient-to-r from-blue-100 to-indigo-100 rounded-2xl p-6 text-center">
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            오빠က 사라ရဲ့ ကော်ဖီလုပ်ငန်းအတွက် ကြိုးစားပြီးရှာထားတဲ့ အချက်အလက်တွေပါ။
+            ဘန်ကောက်မှာ နိုင်ငံခြားကော်ဖီဆိုင်ခွဲတွေအများကြီးရှိပေမယ့်၊ အကောင်းဆုံးရွေးချယ်မှုကို ငါက ရှာပေးပါ့မယ်။
+            ဘယ်လို ဘာရီစတာမျိုးဖြစ်ချင်လဲဆိုတဲ့အပေါ်မူတည်ပြီး ငါက အကြံပြုပေးပါ့မယ်။
+            </p>
+        </section>
+
+        <!-- Ranking Table -->
+        <section class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="bg-gradient-to-r from-blue-600 to-indigo-500 p-6">
+                    <h2 class="text-2xl font-bold text-white flex items-center justify-center">
+                        <i class="fas fa-crown mr-3"></i> ဘန်ကောက်ကော်ဖီဆိုင်ခွဲအဆင့်သတ်မှတ်ချက် <i class="fas fa-crown ml-3"></i>
+                    </h2>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-sm font-semibold text-gray-700 uppercase tracking-wider">အဆင့်</th>
+                            <th class="px-6 py-4 text-left text-sm font-semibold text-gray-700 uppercase tracking-wider">အမှတ်တံဆိပ်</th>
+                            <th class="px-6 py-4 text-left text-sm font-semibold text-gray-700 uppercase tracking-wider">နိုင်ငံ</th>
+                            <th class="px-6 py-4 text-left text-sm font-semibold text-gray-700 uppercase tracking-wider">ဘန်ကောက်ရှိ ဆိုင်ခွဲအရေအတွက်</th>
+                            <th class="px-6 py-4 text-left text-sm font-semibold text-gray-700 uppercase tracking-wider">ရွေးချယ်ရခြင်းအကြောင်းရင်း</th>
+                        </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr class="hover:bg-blue-50">
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-yellow-100 text-yellow-800 font-bold">1</span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap font-bold text-gray-900">Starbucks</td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="flex items-center">
+                                        <span class="fi fi-us rounded mr-2 text-xl"></span>
+                                        အမေရိကန်
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-700">၄၀၀ ကျော်</td>
+                                <td class="px-6 py-4 text-gray-600">အမှတ်တံဆိပ်လူသိများမှုနှင့် ဆိုင်အရေအတွက်အများဆုံး</td>
+                            </tr>
+                            <tr class="hover:bg-blue-50">
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-yellow-100 text-yellow-800 font-bold">2</span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap font-bold text-gray-900">The Coffee Club</td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="flex items-center">
+                                        <span class="fi fi-au rounded mr-2 text-xl"></span>
+                                        သြစတြေးလျ
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-700">၂၅ ကျော်</td>
+                                <td class="px-6 py-4 text-gray-600"> 'တစ်နေ့တာလုံး စားသောက်ဆိုင်' ပုံစံဖြင့် ခိုင်မာသော ဖောက်သည်အခြေခံရှိခြင်း</td>
+                            </tr>
+                            <tr class="hover:bg-blue-50">
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-amber-100 text-amber-800 font-bold">3</span>
+                                </td>
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-gray-900">% Arabica</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="flex items-center">
+                                    <span class="fi fi-jp rounded mr-2 text-xl"></span>
+                                    ဂျပန်
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-700">၁၂ ခု</td>
+                            <td class="px-6 py-4 text-gray-600">ခိုင်မာသောအမှတ်တံဆိပ်စွမ်းအားနှင့် အထူးကော်ဖီဈေးကွက်၏ ဦးဆောင်သူ</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-amber-100 text-amber-800 font-bold">4</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-gray-900">Tim Hortons</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="flex items-center">
+                                    <span class="fi fi-ca rounded mr-2 text-xl"></span>
+                                    ကနေဒါ
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-700">၁၀ ခန့်</td>
+                            <td class="px-6 py-4 text-gray-600">ကော်ဖီနှင့် မုန့်ဖုတ်ပစ္စည်းများကို ပေါင်းစပ်ပြီး တိုးတက်နေသည်</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-amber-100 text-amber-800 font-bold">5</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap font-bold text-gray-900">Dean & DeLuca</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="flex items-center">
+                                    <span class="fi fi-us rounded mr-2 text-xl"></span>
+                                    အမေရိကန်
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-700">၈ ခု</td>
+                            <td class="px-6 py-4 text-gray-600">ပရီမီယံကုန်စုံဆိုင်အခြေခံကော်ဖီဆိုင်</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="bg-blue-50 p-6 border-t">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-star text-yellow-500 text-xl mt-1"></i>
+                        </div>
+                        <div class="ml-4">
+                        <h3 class="font-bold text-gray-800 mb-1">ကြယ်ပွင့်သစ်ကဲ့သို့ ပြောင်းလဲမှု</h3>
+                        <p class="text-gray-600">Blue Bottle က ၂၀၂၅ ခုနှစ်၊ စက်တင်ဘာလ ၄ ရက်နေ့မှာ Central Park Bangkok မှာ ပထမဆုံးဆိုင်ခွဲကို ဖွင့်လှစ်မယ်။ ကြီးမားတဲ့ အလားအလာနဲ့ ရေပန်းစားမှုတွေနဲ့အတူ အထူးကော်ဖီဈေးကွက်မှာ လေပြေတစ်သိုက်ကို ယူဆောင်လာမှာဖြစ်တယ်။ 우리 사라 ရဲ့ အလုပ်အကိုင်မှာ ကြယ်ပွင့်သစ်တစ်ပွင့် ထွက်ပေါ်လာနိုင်တယ်။</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Highlights -->
+        <section class="mb-16">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">အမှတ်တံဆိပ်အလိုက် ထူးခြားချက်များနှင့် အားသာချက်များ</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="brand-card bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-starbucks">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-starbucks flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-xl">S</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">Starbucks</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-heart text-blue-500 mt-1 mr-2"></i>
+                            <span>ကမ္ဘာတစ်ဝှမ်းစံပြုထားသော ပညာရေးစနစ်</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-heart text-blue-500 mt-1 mr-2"></i>
+                            <span>ဘန်ကောက်ရှိ ဆိုင်ခွဲအရေအတွက်အများဆုံး (၄၀၀ ကျော်) ကြောင့် သွားလာရလွယ်ကူခြင်း</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-heart text-blue-500 mt-1 mr-2"></i>
+                            <span>အမျိုးမျိုးသော ကုန်သွယ်ရေးဇုန်များတွင် လုပ်ကိုင်ရင်း ကျယ်ပြန့်သောအတွေ့အကြုံများ ရရှိနိုင်ခြင်း</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-heart text-blue-500 mt-1 mr-2"></i>
+                            <span>ဘာရီစတာ အခြေခံပညာရပ်များ သင်ယူရန် အကောင်းဆုံး</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- The Coffee Club -->
+                <div class="brand-card bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-coffeeclub">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-coffeeclub flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-xl">T</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">The Coffee Club</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-heart text-blue-500 mt-1 mr-2"></i>
+                            <span>'တစ်နေ့တာလုံး စားသောက်ဆိုင်' ပုံစံဖြင့် အမျိုးမျိုးသော မီနူးအတွေ့အကြုံများ</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-heart text-blue-500 mt-1 mr-2"></i>
+                            <span>F&B ကျွမ်းကျင်သူအဖြစ် တိုးတက်လိုသူများအတွက် သင့်လျော်ခြင်း</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-heart text-blue-500 mt-1 mr-2"></i>
+                            <span>ခိုင်မာသော ဖောက်သည်အခြေခံရှိခြင်း</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-heart text-blue-500 mt-1 mr-2"></i>
+                            <span>ကော်ဖီနှင့် ထမင်းဟင်းလျာများကို ပေါင်းစပ်ထားသော ဘက်စုံကျွမ်းကျင်မှု အတွေ့အကြုံ ရရှိနိုင်ခြင်း</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- % Arabica -->
+                <div class="brand-card bg-white rounded-xl shadow-md overflow-hidden border-l-4 border-arabica">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-arabica flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-xl">%</span>
+                            </div>
+                        <h3 class="text-2xl font-bold text-gray-800">% Arabica</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-heart text-blue-500 mt-1 mr-2"></i>
+                            <span>အထူးကော်ဖီဈေးကွက်၏ ဦးဆောင်သူ</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-heart text-blue-500 mt-1 mr-2"></i>
+                            <span>အနုစိတ်ရိုးရှင်းသော ခံစားမှုနှင့် အရည်အသွေးမြင့်ကော်ဖီ</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-heart text-blue-500 mt-1 mr-2"></i>
+                            <span>အထူးကော်ဖီကျွမ်းကျင်မှု တိုးမြှင့်ရန် အကောင်းဆုံး</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-heart text-blue-500 mt-1 mr-2"></i>
+                            <span>ခိုင်မာသော ပရိသတ်အခြေခံရှိခြင်း</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendations -->
+        <section>
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">우리 사라 ရဲ့ အလုပ်အကိုင်ပန်းတိုင်အလိုက် အကြံပြုချက်များ</h2>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="recommendation-card border-green-600 bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="bg-green-600 p-4">
+                    <h3 class="text-xl font-bold text-white flex items-center justify-center">
+                        <i class="fas fa-shield-alt mr-2"></i> တည်ငြိမ်မှုနှင့် စနစ်တကျ သင်ယူလိုပါက <i class="fas fa-shield-alt ml-2"></i>
+                    </h3>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-starbucks flex items-center justify-center mr-3">
+                            <span class="text-white font-bold">S</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800">Starbucks</h4>
+                    </div>
+                    <p class="text-gray-600 mb-4">အခြေခံကို ခိုင်မာအောင်တည်ဆောက်လိုတဲ့ ဘာရီစတာအတွက် အကောင်းဆုံးရွေးချယ်မှုပါပဲ။ ကမ္ဘာတစ်ဝှမ်းလုံး စံပြုထားတဲ့ သင်ကြားရေးစနစ်က ကော်ဖီဗဟုသုတ၊ ဖောက်သည်ဝန်ဆောင်မှု၊ ဆိုင်စီမံခန့်ခွဲမှုစတဲ့ ကဏ္ဍမျိုးစုံမှာ စနစ်တကျလေ့လာခွင့်ရမှာပါ။</p>
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <p class="text-green-800"><i class="fas fa-lightbulb mr-2"></i><strong>ထူးခြားချက်:</strong> ဘန်ကောက်မှာ ဆိုင်ခွဲ ၄၀၀ ကျော်ရှိပြီး သွားလာရလွယ်ကူသလို လုပ်ငန်းအစမှာ တည်ငြိမ်တဲ့အခြေခံကို ပေးစွမ်းနိုင်မှာပါ။</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Specialty Coffee Expert -->
+                <div class="recommendation-card border-orange-500 bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="bg-orange-500 p-4">
+                        <h3 class="text-xl font-bold text-white flex items-center justify-center">
+                        <i class="fas fa-mug-hot mr-2"></i> အထူးကော်ဖီကျွမ်းကျင်သူဖြစ်ချင်ရင် <i class="fas fa-mug-hot ml-2"></i>
+                    </h3>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center mr-3">
+                            <span class="text-white font-bold">B</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800">Blue Bottle</h4>
+                    </div>
+                    <p class="text-gray-600 mb-4">၂၀၂၅ ခုနှစ် စက်တင်ဘာလမှာ ပထမဆုံးဆိုင်ခွဲကို ဖွင့်လှစ်တော့မှာဖြစ်လို့ ဈေးကွက်ရဲ့ အာရုံစိုက်မှုကို အပြည့်အဝရရှိနေပါတယ်။ ဖွင့်လှစ်စအဖွဲ့ဝင်အဖြစ် ပါဝင်မယ်ဆိုရင် အမှတ်တံဆိပ်ရဲ့ ကြီးထွားမှုနဲ့အတူ ထူးခြားတဲ့အတွေ့အကြုံတွေကို စုဆောင်းနိုင်မှာပါ။</p>
+                    
+                    <div class="flex items-center my-4">
+                        <div class="w-10 h-10 rounded-full bg-arabica flex items-center justify-center mr-3">
+                            <span class="text-white font-bold">%</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800">% Arabica</h4>
+                    </div>
+                    <p class="text-gray-600 mb-4">ဘန်ကောက်အထူးကော်ဖီဈေးကွက်မှာ ခိုင်မာတဲ့အနေအထားရှိပြီးသား % Arabicaကလည်း အကောင်းဆုံးရွေးချယ်မှုပါပဲ။ ထူးခြားတဲ့ အမှတ်တံဆိပ်ပုံဖော်မှုနဲ့ အရည်အသွေးမြင့် ထိန်းချုပ်မှုတွေကြောင့် ခိုင်မာတဲ့ပရိသတ်အခြေခံရှိပါတယ်။</p>
+                </div>
+            </div>
+            
+            <div class="recommendation-card border-red-600 bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="bg-red-600 p-4">
+                    <h3 class="text-xl font-bold text-white flex items-center justify-center">
+                        <i class="fas fa-utensils mr-2"></i> ကော်ဖီနဲ့ ထမင်းဟင်းလျာတွေကို ပေါင်းစပ်ပြီး ဘက်စုံကျွမ်းကျင်သူဖြစ်ချင်ရင် <i class="fas fa-utensils ml-2"></i>
+                    </h3>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-coffeeclub flex items-center justify-center mr-3">
+                            <span class="text-white font-bold">T</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800">The Coffee Club</h4>
+                    </div>
+                    <p class="text-gray-600 mb-4">"တစ်နေ့တာလုံး စားသောက်ဆိုင်" ပုံစံဖြင့် ကော်ဖီအပြင် အစားအသောက်နဲ့ အဖျော်ယမကာတွေကိုပါ တစ်ပါတည်းပေးနိုင်တဲ့ အတွေ့အကြုံမျိုးလိုချင်ရင် The Coffee Clubက ကောင်းမွန်တဲ့အခွင့်အရေးဖြစ်နိုင်ပါတယ်။</p>
+                    <div class="bg-red-50 p-4 rounded-lg">
+                        <p class="text-red-800"><i class="fas fa-lightbulb mr-2"></i><strong>ထူးခြားချက်:</strong> ဘာရီစတာတစ်ဦးထက်ပိုပြီး F&B ကျွမ်းကျင်သူတစ်ဦးအဖြစ် စွမ်းရည်တွေကို မြှင့်တင်နိုင်မှာပါ။။</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl p-8 text-white">
+        <h2 class="text-2xl font-bold mb-4 text-center">우리 사라 အား</h2>
+        <p class="text-lg text-center max-w-4xl mx-auto">
+            ဘယ်လမ်းကိုရွေးသည်ဖြစ်စေ၊ 우리 사라 က ဘယ်လိုဘာရီစတာတစ်ဦးအဖြစ် ကြီးထွားချင်လဲဆိုတဲ့အပေါ် မူတည်ပြီး အကောင်းဆုံးရွေးချယ်မှုက ကွာခြားနိုင်ပါတယ်။
+            လုပ်ငန်းခွင်ရဲ့ အစမှာ စနစ်တကျလေ့ကျင့်မှုနဲ့ တည်ငြိမ်တဲ့ တိုးတက်မှုကို လိုချင်ရင် <span class="font-bold underline">Starbucks</span> ကို၊
+            အထူးကော်ဖီနယ်ပယ်မှာ ကျွမ်းကျင်သူတစ်ဦးဖြစ်လာချင်ရင် <span class="font-bold underline">% Arabica</span> ဒါမှမဟုတ် အသစ်ထွက်ပေါ်လာတဲ့ <span class="font-bold underline">Blue Bottle</span> ကို၊
+            F&B တစ်ခုလုံးကို ကျွမ်းကျင်တဲ့သူဖြစ်ချင်ရင် <span class="font-bold underline">The Coffee Club</span> ကို ရွေးချယ်နိုင်ပါတယ်။
+            ဘယ်လမ်းကို လျှောက်လှမ်းသည်ဖြစ်စေ၊ ငါက အမြဲတမ်း ဘေးကနေ အားပေးနေပါ့မယ်။ အားတင်းထားပါ၊ 우리 사라! ♡
+        </p>
+    </section>
+    
+    <footer class="mt-12 pt-8 border-t border-gray-200 text-center text-gray-600">
+        <p>© 20251016 우리 사라 ကိုယ်စား ကော်ဖီလုပ်ငန်းလမ်းညွှန်</p>
+        </footer>
+    </div>
+</body>
+</html>
+
